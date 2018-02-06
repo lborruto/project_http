@@ -1,1 +1,0 @@
-﻿Register-ScheduledJob -Name "LancemntVersServeurFichier" -FilePath "C:\Users\pblue\Documents\CopieSitesVersServeurFichier.ps1" -Trigger (New-JobTrigger -Daily -At "8 PM")
