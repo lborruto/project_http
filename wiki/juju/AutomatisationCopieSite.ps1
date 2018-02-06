@@ -1,0 +1,1 @@
+﻿Register-ScheduledJob -Name "EnvoiDesSites" -FilePath "C:\Users\Administrateur\Documents\Copie des sites vers server distant.ps1" -Trigger (New-JobTrigger -Daily -At "9 PM")

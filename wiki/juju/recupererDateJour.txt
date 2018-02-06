@@ -1,0 +1,6 @@
+
+$date = (Get-Date).ToString("dd/MM/yyyy")
+echo $date
+
+$File=Get-ChildItem "CheminVersLeDossier"
+$File.LastWriteTime
