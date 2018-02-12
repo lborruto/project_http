@@ -1,7 +1,7 @@
 # Prérequis :
-
-	sudo apt-get update && upgrade y (met à jour le système d'exploitation)
-	sudo apt-get install apache2 (installe apache)
+mMet à jour le système d'exploitation + installe apache
+	sudo apt-get update && upgrade y 
+	sudo apt-get install apache2 
 
 # Etape 1 : Créer la structure des répertoires
 On va créer les 3 répertoires correspondant à nos VirtualHosts.
