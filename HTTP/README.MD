@@ -74,9 +74,9 @@ a2dissite désactive la configuration.
 
 	sudo nano /etc/hosts
 
-	111.111.111.111 www.carnoflux.fr
-	111.111.111.111 www.carnoflux.local
-	111.111.111.111 www.supervision.carnoflux.local
+	192.168.10.10 www.carnoflux.fr
+	192.168.10.10 www.carnoflux.local
+	192.168.10.10 www.supervision.carnoflux.local
 
 
 On redémarre Apache :
