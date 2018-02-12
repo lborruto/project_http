@@ -15,8 +15,11 @@ On va créer les 3 répertoires correspondant à nos VirtualHosts.
 On donne les permissions pour éviter les erreurs d'Apache, et notemment pouvoir accèder aux fichiers CSS ou JavaScript pour notre site.
 
 	sudo chown -R $USER:$USER /var/www/html/carnoflux.fr/
+	
 	sudo chown -R $USER:$USER /var/www/html/carnoflux.local/
+	
 	sudo chown -R $USER:$USER /var/www/html/supervision.carnoflux.local/
+	
 	sudo chmod -R 755 /var/www/
 
 # Etape 3 : index.html
