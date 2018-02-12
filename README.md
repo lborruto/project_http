@@ -1,5 +1,6 @@
 # Prérequis :
-mMet à jour le système d'exploitation + installe apache
+Met à jour le système d'exploitation + installe apache
+
 	sudo apt-get update && upgrade y 
 	sudo apt-get install apache2 
 
@@ -64,20 +65,22 @@ Faire la même pour local et supervision.
 	sudo a2ensite carnoflux.local.conf
 	sudo a2ensite supervision.carnoflux.local.conf
 
-	sudo a2dissite 000-default.conf (qui désactive la configuration par défaut)
+	sudo a2dissite 000-default.conf 
 
 a2ensite va créer un lien symbolique à partir de la configuration /etc/apache2/sites-available/ vers /etc/apache2/sites-enabled/
+a2dissite désactive la configuration.
 
 # Etape 6 : Modifier le fichier Hosts
 
 	sudo nano /etc/hosts
 
-111.111.111.111 www.carnoflux.fr
-111.111.111.111 www.carnoflux.local
-111.111.111.111 www.supervision.carnoflux.local
+	111.111.111.111 www.carnoflux.fr
+	111.111.111.111 www.carnoflux.local
+	111.111.111.111 www.supervision.carnoflux.local
 
 
 On redémarre Apache :
+
 	sudo systemctl restart apache2 ou sudo service apache2 restart
 
 Go Navigateur >> www.carnoflux.fr >> DONE !
