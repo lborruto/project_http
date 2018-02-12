@@ -3,7 +3,6 @@
 	sudo apt-get update && upgrade y (met à jour le système d'exploitation)
 	sudo apt-get install apache2 (installe apache)
 
----------
 # Etape 1 : Créer la structure des répertoires
 On va créer les 3 répertoires correspondant à nos VirtualHosts.
 
@@ -11,8 +10,6 @@ On va créer les 3 répertoires correspondant à nos VirtualHosts.
 	sudo mkdir -p /var/www/html/carnoflux.local/
 	sudo mkdir -p /var/www/html/supervision.carnoflux.local/
 
-
-------------
 # Etape 2 : Permissions
 On donne les permissions pour éviter les erreurs d'Apache, et notemment pouvoir accèder aux fichiers CSS ou JavaScript pour notre site.
 
@@ -21,7 +18,6 @@ On donne les permissions pour éviter les erreurs d'Apache, et notemment pouvoir
 	sudo chown -R $USER:$USER /var/www/html/supervision.carnoflux.local/
 	sudo chmod -R 755 /var/www/
 
-------------
 # Etape 3 : index.html
 
 On donne les permissions pour éviter les erreurs d'Apache, et notemment pouvoir accèder aux fichiers CSS ou JavaScript pour notre site.
@@ -41,7 +37,6 @@ On va éditer index.html qui sera la première chose que va afficher apache en a
 Faire la même chose pour carnoflux.fr et carnoflux.local
 La page web va afficher "Success!  Welcome to Supervision" et dans l'onglet "SUPERVISION.CARNOFLUX"
 
-------------
 # Etape 4 : Créer des "Virtual Host Files"
 
 On copie la config de base dans notre nouvelle :
@@ -63,7 +58,6 @@ On ajoute les lignes suivantes :
 
 Faire la même pour local et supervision.
 
-------------
 # Etape 5 : Activer les nouvelles configurations
 
 	sudo a2ensite carnoflux.fr.conf
@@ -74,7 +68,6 @@ Faire la même pour local et supervision.
 
 a2ensite va créer un lien symbolique à partir de la configuration /etc/apache2/sites-available/ vers /etc/apache2/sites-enabled/
 
-------------
 # Etape 6 : Modifier le fichier Hosts
 
 	sudo nano /etc/hosts
@@ -88,5 +81,3 @@ On redémarre Apache :
 	sudo systemctl restart apache2 ou sudo service apache2 restart
 
 Go Navigateur >> www.carnoflux.fr >> DONE !
-
-------------
