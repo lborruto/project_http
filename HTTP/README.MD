@@ -1,5 +1,5 @@
 # Prérequis :
-Met à jour le système d'exploitation + installe apache
+Met à jour le système d'exploitation + install apache
 
 	sudo apt-get update && upgrade y 
 	sudo apt-get install apache2 
