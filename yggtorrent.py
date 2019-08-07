@@ -45,7 +45,7 @@ class yggtorrent(object):
     password = "Az4wzRNA"
    ###########################################################################
 
-    url = 'https://www2.yggtorrent.ch'
+    url = 'https://www.yggtorrent.ch'
     name = 'YGG Torrent'
     supported_categories = {'all': '', 'music': '2139', 'movies': '2145', 'games':'2142', 'software': '2144', 'books': '2140'}
 
